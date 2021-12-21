@@ -24,7 +24,7 @@ python temporal_net_training.py -m flow --new_length=10 --epochs 350 --b 32 --lr
 ```
 If you want to continue training a previously trained temporal stream model (in two-stream-pytorch-master folder):
 ```
-python temporal_net_training.py -m flow --new_length=10 --epochs 350 --b 32 --lr 0.001 --lr_steps 200 300 -- resume ./checkpoints/"model_name"
+python temporal_net_training.py -m flow --new_length=10 --epochs 350 --b 32 --lr 0.001 --lr_steps 200 300 --resume ./checkpoints/"model_name"
 ```
 If you want to evaluate a trained temporal stream model (in two-stream-pytorch-master folder):
 ```
