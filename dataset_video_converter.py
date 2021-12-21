@@ -20,7 +20,8 @@ def FrameCapture(path, file, folder):
     #path = os.path.join(root, file)
     #file = file.replace(".mp4", "_")
     #folder = os.path.join(root, (file + "frames"))
-    os.mkdir(folder)
+    if(os.isdir(folder) == False):
+      os.mkdir(folder)
     vid = cv2.VideoCapture(path)
     i=1
 
@@ -37,6 +38,8 @@ def FrameCapture(path, file, folder):
 def VideoFinder(dataset, store):
     start = time.time()
     count = 0
+    if os.isdir(store) == False:
+      os.mkdir(store)
     for rt, dirs, fi in os.walk(dataset):
         for dir in dirs:
             for root, dr, files in os.walk(os.path.join(rt, dir)):
