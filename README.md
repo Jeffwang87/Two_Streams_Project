@@ -17,11 +17,11 @@ To convert dataset videos into frames:
 ```
 python dataset_video_converter.py --src_dir ./HAA500/videos --store_dir ./two-stream-pytorch-master/datasets/HAA500_frames
 ```
-To train the TinyMotionNet (in MotionNet folder) and change the path of your data in the code : 
+To train the TinyMotionNet (in MotionNet folder), change the path of your data in the code : 
 ```
 python flownet_train.py
 ```
-To train the temporal stream (in two-stream-pytorch-master folder) and change the path of your data in the code :
+To train the temporal stream (in two-stream-pytorch-master folder), change the path of your data in the code :
 ```
 python temporal_net_training.py -m flow --new_length=10 --epochs 350 --b 32 --lr 0.001 --lr_steps 200 300
 ```
@@ -37,7 +37,7 @@ If you want to evaluate a trained spatial stream model (in two-stream-pytorch-ma
 ```
 python spatial_stream_gpu.py ./datasets/HAA500_frames/ --resume ./checkpoints/"model_name" -e "number of epochs to evaluate on (minimum 1)"
 ```
-If you want to test the fusion (in two-stream-pytorch-master folder) and change the path of your data and saved models in the code:
+If you want to test the fusion (in two-stream-pytorch-master folder), change the path of your data and saved models in the code:
 ```
 python testing_video.py
 ```
