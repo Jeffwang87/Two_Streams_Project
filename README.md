@@ -37,7 +37,7 @@ If you want to evaluate a trained spatial stream model (in two-stream-pytorch-ma
 ```
 python spatial_stream_gpu.py ./datasets/HAA500_frames/ --resume ./checkpoints/"model_name" -e "number of epochs to evaluate on (minimum 1)"
 ```
-If you want to test the fusion (in two-stream-pytorch-master folder) and change the path of your data and models saved:
+If you want to test the fusion (in two-stream-pytorch-master folder) and change the path of your data and saved models:
 ```
 python testing_video.py
 ```
