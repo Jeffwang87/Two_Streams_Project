@@ -1,5 +1,13 @@
 # Two_Streams_Project
 
+#Package dependencies
+```
+Python 
+Pytorch
+OpenCV
+Tochvision
+OpenCV-contrib-python
+```
 
 # Commands
 To convert dataset videos into frames:
