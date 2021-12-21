@@ -9,6 +9,9 @@ Tochvision
 OpenCV-contrib-python
 ```
 
+# Dataset
+Download [HAA_500](https://www.cse.ust.hk/haa/) dataset and unzip
+
 # Commands
 To convert dataset videos into frames:
 ```
@@ -44,7 +47,7 @@ python testing_video.py
 ```
 Nick wrote:
 dataset_video_converter.py
-spatial_stream_gpu.py: modified original code from paper to add functionality, allow for resuming training model, modified implementation to pytorch 1.10.1, and work with HAA500 dataset
+spatial_stream_gpu.py: modified original code from paper to add functionality, allow for resuming training model, modified implementation to pytorch 1.10.1, and compatability with the HAA500 dataset
 ```
 ```
 Jeff wrote:
