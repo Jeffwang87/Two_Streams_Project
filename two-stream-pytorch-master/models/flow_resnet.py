@@ -343,6 +343,6 @@ class FlowOnlyClassifier(nn.Module):
 def spatial_stream():
     model = FlowOnlyClassifier(
     models.feafa_architecture.TinyMotionNet(),
-    flow_resnet152(pretrained=True, num_classes=500)
+    flow_resnet18(pretrained=True, num_classes=500)
     )
     return model
