@@ -23,7 +23,7 @@ python flownet_train.py
 ```
 To train the temporal stream (in two-stream-pytorch-master folder), change the path of your data in the code :
 ```
-python temporal_net_training.py -m flow --new_length=10 --epochs 350 --b 32 --lr 0.001 --lr_steps 200 300
+python temporal_net_training.py -m flow --new_length=10 --epochs 350 --b 32 --lr 0.001 --lr_steps 4 20
 ```
 To train the spatial stream (in two-stream-pytorch-master folder): 
 ```
