@@ -58,7 +58,7 @@ class HAADataset(Dataset):
         else:
             print('Error: incorrect usage')
         # extract frames and labels
-        self.allwindows_frames, self.allwindows_labels = windowmapper(self.videopaths,self.window) # THIS HAS BEEN MODIFIED FOR TESTING PURPOSES TO SHOW ONE VIDEO ONLY. CHANGE IT BACK IF YOU WANT TO TRAIN ON THE ENTIRE DATASET
+        self.allwindows_frames, self.allwindows_labels = windowmapper(self.videopaths,self.window) 
        # print(self.allwindows_frames[0])
     def __getitem__(self, index):
         # read the frames in the window
