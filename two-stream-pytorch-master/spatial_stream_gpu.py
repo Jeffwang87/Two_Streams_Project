@@ -73,7 +73,7 @@ parser.add_argument('--print-freq', default=50, type=int,
                     metavar='N', help='print frequency (default: 50)')
 parser.add_argument('--save-freq', default=10, type=int,
                     metavar='N', help='save frequency (default: 25)')
-parser.add_argument('--resume', default='/mmfs1/data/wangccy/Two_Streams_Project/spatial_final_save_2/', type=str, 
+parser.add_argument('--resume', default='/mmfs1/data/wangccy/Two_Streams_Project/spatial_final_save_2/model_best.pth.tar', type=str, 
                     metavar='PATH', help='path to latest checkpoint (default: none)')
 parser.add_argument('-e', '--evaluate', default=0, type=int, metavar='N',
                     help='evaluate model on validation set N times')
